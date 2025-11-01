@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-    <a href="#home">Inicio</a>
-    <a href="#about">Sobre mí</a>
-  </nav>
+     <header role="banner">
+      <nav role="navigation">
+        <ul>
+          <li><a href="#home" onclick="loadHome()">Home</a></li>
+          <li><a href="#about" onclick="loadAbout()">About</a></li>
+          <li><a href="#contact" onclick="loadContact()">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <div id="content"></div>
+    <main role="main" id="mainContent">
+    </main>
+    <footer role="contentinfo">
+      <p>© 2025 Semantic SPA. All rights reserved.</p>
+    </footer>
     <script>src="js/script.js"</script>
 </body>
 </html>

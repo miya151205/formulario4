@@ -1,13 +1,12 @@
-    const routes = {
-      '#home': '<h1>Bienvenido a mi SPA</h1>',
-      '#about': '<h1>Sobre mí</h1><p>Esta es la sección de información.</p>'
-    };
+    function loadHome() {
+    document.getElementById("mainContent").innerHTML = "<h1>Welcome to Our SPA</h1><p>This is the home page content.</p>";
+}
 
-    function router() {
-      const hash = window.location.hash || '#home';
-      document.getElementById('content').innerHTML = routes[hash];
-    }
+function loadAbout() {
+    document.getElementById("mainContent").innerHTML = "<h1>About Us</h1><p>Learn more about our mission and values.</p>";
+}
 
-    window.addEventListener('hashchange', router);
-    window.addEventListener('load', router);
+function loadContact() {
+    document.getElementById("mainContent").innerHTML = "<h1>Contact Us</h1><p>Contact details and form.</p>";
+}
 console.log("Router initialized");
